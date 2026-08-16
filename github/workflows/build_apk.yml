@@ -36,5 +36,4 @@ jobs:
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
-          name: VoxStudio-Release-APK
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: VoxStudio-Release-A

@@ -25,7 +25,7 @@ jobs:
           channel: 'stable'
 
       - name: Create Complete Android Project
-        run: flutter create --platforms=android .
+        run: flutter create --project-name voxstudio_app --platforms=android .
 
       - name: Get Dependencies
         run: flutter pub get
@@ -36,4 +36,6 @@ jobs:
       - name: Upload Release APK
         uses: actions/upload-artifact@v4
         with:
-          name: VoxStudio-Release-A
+          name: VoxStudio-Release-APK
+          path: build/app/outputs/flutter-apk/app-release.apk
+          
